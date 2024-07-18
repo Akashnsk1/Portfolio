@@ -234,6 +234,7 @@ main hr {
   text-align: -webkit-center;
   margin: 1rem 1.5rem;
   font-size: 0.85rem;
+  transition-duration: 0.15s;
 }
 
 .card:hover {
