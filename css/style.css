@@ -5,8 +5,8 @@
 }
 
 .logo {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 54%;
   margin-top: 0.6rem;
   object-fit: cover;
@@ -122,29 +122,21 @@ nav ul li a:hover {
 
 
 
-/* .my_image {
-  width: 25rem;
-  height: 28.1rem;
-  object-fit: cover;
-} */
+
 .my_image {
-  width: 21.4rem;
-  height: 24.1rem;
+  width: 19.4rem;
+  height: 22.1rem;
   object-fit: cover;
 }
 
-/* .about-me {
-  height: 58vh;
-  width: 59rem;
-} */
 .about-me {
-  height: 63vh;
-  width: 56rem;
+  height: 57vh;
+  width: 52rem;
 }
 
 .about-me h2 {
   color: rgb(181 116 255);
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -152,7 +144,7 @@ nav ul li a:hover {
 }
 
 .about-me p {
-  font-size: larger;
+  font-size: 1.05rem;
   text-align: justify;
   margin: 2rem 0;
 }
@@ -187,7 +179,7 @@ main hr {
 }
 
 .secondsection h1 {
-  font-size: 3.2rem;
+  font-size: 2.7rem;
   font-weight: bold;
   margin-left: 5.2rem;
 }
@@ -198,7 +190,7 @@ main hr {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .card_link {
@@ -379,7 +371,7 @@ footer {
 }
 
 .footer_logo {
-  width: 24%;
+  width: 21%;
   border-radius: 57%;
   object-fit: cover;
 }
