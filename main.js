@@ -6,29 +6,24 @@ let show = function(){
 
 
 function toggleMenu() {
-    var x = document.getElementById("dropdown-content");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+    var dropdown = document.getElementById("dropdown-content");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 }
 
-document.querySelectorAll('.dropdown-content a').forEach(item => {
-    item.addEventListener('click', () => {
-        document.getElementById("dropdown-content").style.display = "none";
+document.getElementById("menuButton").addEventListener("click", function (event) {
+    event.stopPropagation();
+    toggleMenu();
+});
+
+document.querySelectorAll('.dropdown-content a').forEach(function (link) {
+    link.addEventListener('click', function () {
+        document.getElementById('dropdown-content').style.display = 'none';
     });
 });
 
-// Collapse the menu when clicking outside
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown-content')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.style.display === "block") {
-                openDropdown.style.display = "none";
-            }
-        }
+document.addEventListener("click", function (event) {
+    var dropdown = document.getElementById("dropdown-content");
+    if (!event.target.closest('.dropbtn') && !event.target.closest('.dropdown-content')) {
+        dropdown.style.display = "none";
     }
-}
+});
