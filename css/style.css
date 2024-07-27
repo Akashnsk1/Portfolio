@@ -473,16 +473,16 @@ footer hr {
 .dropbtn {
   background-color: #0e0e45;
   color: white;
-  padding: 7px;
+  /* padding: 7px; */
   font-size: 22px;
-  /* border: 0.1px solid; */
+  border: 0.1px solid #0e0e45;
   cursor: pointer;
 }
 
-.dropbtn:hover,
+/* .dropbtn:hover,
 .dropbtn:focus {
   background-color: #17176f;
-}
+} */
 
 .dropdown {
   display: none;
